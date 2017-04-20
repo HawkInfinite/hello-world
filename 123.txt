@@ -1,0 +1,47 @@
+各种快捷键: Super(=Win) 显示快捷键菜单
+	   Alt + Tab / Alt + ` 切换窗口 后者需要点击后切换
+ 	   Super + W 显示所有窗口
+	   Ctrl + Shift + C 终端中复制
+	   Ctrl + Shift + V 终端中黏贴
+	   Ctrl 在终端中可以任意选取
+	   Ctrl + Alt + F1 进入命令行模式 无图形
+	   reboot 重启           无需登录
+	   sudo shutdown now 关机 无需登录
+	   Ctrl + Alt + F7 退出命令行模式
+①:pwd ls cd
+	pwd 查看终端当前所在文件夹
+	 ls 查看当前文件下的文件
+	    ls -lh / ls -l 查看当前文件夹下的详细信息
+	 cd a.跳转到另外的文件夹（绝对路径） 如 cd /tmp, cd /bin, cd /opt
+	    b.跳转到当前文件夹的子文件夹     如 cd Downloads/ cd Music/
+②:mkdir/touch cp mv rm
+	mkdir 在当前文件夹下创建新文件夹
+	touch 在当前文件夹下创建空白文档
+	   cp 复制文件 (sudo) cp 文件名 最终复制地址
+	   mv 移动文件 (sudo) mv 文件名 最终移动地址
+	   rm a. rm -r 删除文件夹及文件夹中的所有子文件和子文件夹
+	      b. rm -dir 先对文件夹(包括子文件)进行访问，后依次询问用户是否删除
+	      c. 删除所有c++语言程序档；删除前逐一询问确认: rm -i *.cpp
+③:gedit cat grep |
+	gedit 文本编辑器 开启进程的用法 gedit helloworld.txt &
+	      		关掉它用kill +该进程的id
+	  cat 查看该文本的内容
+		more 向前翻页查看 less 向后翻页查看
+	 grep 使用正则表达式 grep "123" 表示在文本中寻找有123的句子
+
+	    | 管道，开始使用正则表达式 如 cat helloworld.txt | grep "123"
+		                       表示在helloworld.txt中找有123的句子
+④:ps kill & ifconfig
+	ps 查看当前运行的进程
+           a. ps -ax 查看当前进程的id,状态,持续时间,所执行的命令
+	   b. ps -ax | grep "sogou" 查看关于搜狗输入法的进程
+	 & 放在启动参数后面表示设置此进程为后台进程 如 gedit helloworld.txt &
+      kill 关闭进程 如 kill + -该进程id
+  ifconfig 查看自己的ip地址
+⑤:tar -xzvf/unrar ./
+	tar -xzvf 在当前文件夹下解压tar.gz文件
+	    unrar 在当前文件夹下解压unrar.文件
+	       ./ ./ + 程序名 开启该程序
+⑥sudo apt-get install wget
+	sudo apt-get install +应用名 在ubuntu商店中找到该应用并进行下载
+	wget + url地址 直接从该地址下载应用
