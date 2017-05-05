@@ -1,0 +1,17 @@
+每个文件以news_id.json（自行替换news_id）命名，保存在data目录
+	"news_id": 1, // 自己从1开始自增的数，类型为int
+	"source_id": 1, // 新闻源ID，作业布置上面有
+	"language": "chi", // 新闻源语言，作业布置上面有
+	"request_url": "url link", // 请求地址
+	"response_url": "url link", // 响应地址（可用response.url获取）
+	"classification": "classification", // 新闻分类
+	"abstract": "abstract", // 新闻概括，可以为空（空字符串）
+	"title": "title", // 新闻标题
+	"body": "body", // 新闻主题
+	"pub_time": "2017-04-29 12:45:00", // 新闻发布时间，格式必须是xxxx-xx-xx xx:xx:xx，没有的项用0代替
+	"cole_time": 1474830829.96, // 爬取时间的时间戳（可直接用time.time()来获取）
+	"out_links": ["out link1", "out link2"], // 外链集，通过匹配所有a标签的href属性来后去
+	"images": ["image link"], // 图片集，获取与新闻有关的图片，没有时用空列表代替
+http://www.filipinoexpress.com                       
+http://www.worldnews.net.ph/                          
+http://www.shangbao.com.ph/
